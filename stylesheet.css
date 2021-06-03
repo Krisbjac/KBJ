@@ -1,4 +1,26 @@
-.skills img {
-    width: 200px;
-    height: 200px;
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    
 }
+
+.skills img {
+    width: auto;
+    height: 200px;
+    outline: auto;
+    position: relative;
+
+}
+
+.sites {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.portfolio img {
+    width: auto;
+    height: 400px;
+    outline: auto;
+}
+
