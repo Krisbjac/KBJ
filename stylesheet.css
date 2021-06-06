@@ -1,26 +1,90 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin: 25px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header li {
+    display: block;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about p {
+    display: block;
+    margin-left: 10em;
+    margin-top: 1em;
+}
+
+.about img {
+    height: 300px;
+    width: auto;
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+.about ul {
+    margin-left: 10em;
+    line-height: 1.2em;
+}
+
 .logos {
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: center;
 }
 
 .skills img {
     width: auto;
-    height: 200px;
+    height: 150px;
     outline: auto;
-    position: relative;
+    margin: 1em;
 
 }
 
 .sites {
     display: flex;
     justify-content: center;
-    margin: auto;
+    flex-wrap: wrap;
 }
 
 .portfolio img {
-    width: auto;
-    height: 400px;
-    outline: auto;
+    width: 600px;
+    height: 300px;
+    box-shadow: 5px 5px 20px black;
+    margin: 15px;
 }
 
+.fizzbuzz p{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.fizzbuzzcode {
+    display: flex;
+    justify-content: center;
+}
+
+code {
+    color: blue;
+
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}

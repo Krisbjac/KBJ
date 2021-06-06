@@ -11,30 +11,44 @@
         <nav>
             <ul>
                 <li>About Me</li>
-                <li>Projects</li>
+                <li>Programming Skills</li>
+                <li>Web Dev Portfolio</li>
                 <li>Contact</li>
             </ul>
         </nav>
     </header>
 
-    <section class="about">
+<!-- ABOUT SECTION --> 
+    <div>
         <h2>About Me</h2>
+    </div>
+    <section class="about">            
+        <div class="about-text">
         <p>
-            My name is Kristian B. Jacobsen and I’m a 29 year old Oslo-based entrepreneur combining my work as a professional jazz-bassist and project leader with my newfound love for programming and web-development.<br>
-            Apart from performing and programming i work as an A&R at Pekula Records giving adventurous new music a platform. In the summertime I coach the youth job training program Kultursommerjobb organized by Oslo municipality. 
+            Hi!
         </p>
-        <p>Other skills include:</p>
+        <p>
+            My name is Kristian B. Jacobsen. <br> I’m a 29 year old Oslo-based entrepreneur combining my work <br> as a professional jazz-bassist and project leader with my newfound <br> love for programming and web-development.
+        </p>
+        <p>
+            Apart from performing and programming I work as an A&R at <br> Pekula Records giving adventurous new music a platform. <br> In the summertime I coach the youth job training program <br> Kultursommerjobb organized by Oslo municipality. 
+        </p>
+        <p>
+            Other skills include:
+        </p>
+         
         <ul>
             <li>Project Management</li>
             <li>Writing grant applications for cultural projects</li>
             <li>Writing copy</li>
             <li>Teaching Experience</li>
         </ul>
+    </div>   
     <img src="./Resources/Kristian_web-768x768.jpg" alt="">
     </section>
-
+<!-- SKILLS SECTION -->
     <section class="skills">
-        <h2>Programming skills</h2>
+        <h2>Programming Skills</h2>
         <div class="logos">
             <img src="./Resources/5352-html5_102567.png" alt="Hypertext Markup Language">
             <img src="./Resources/file_type_css_icon_130661 (1).png" alt="Cascading Style Sheets">
@@ -44,16 +58,86 @@
         </section>
     </section>
 
+<!-- PORTFOLIO SECTION -->
+
     <section class="portfolio">
-        <h2>Web dev portfolio</h2>
+        <h2>Web Dev Portfolio</h2>
         <div class="sites">
             <img src="./Resources/Excursion.png" alt="Excursion page">
             <img src="./Resources/Fotomatix.png" alt="Fotomatic page">
             <img src="./Resources/Tea Cozy.png" alt="Tea Cozy page">
             <img src="./Resources/Number guessing.png" alt="Number Guessing game">
         </div>
+        <div class="fizzbuzz">
+            <div>
+                <p>
+                    <b>Fizzbuzz JavaScript Challenge:</b>
+                </p>
+            </div>
+            
+            <div class="fizzbuzzcode">
+                <code>
+                    for (let i = 1 ; i < 101 ; i++ ) { <br>
+                        if ((i % 3) == 0 && (i % 5) == 0) { <br>
+                            console.log('FizzBuzz')
+                        }
+                        <br>
+                        else if ((i % 5) == 0) {
+                            console.log('Buzz')
+                        }
+                        <br>
+                        else if ((i % 3) == 0) { 
+                            console.log('Fizz')
+                        }
+                        <br>
+                        else {
+                            console.log(i)
+                        }
+                    }
+                </code>
+            </div>
+        </div>
     </section>
 
+<!-- CONTACT SECTION -->
+
+    <section class="Contact">
+        <h2>Contact</h2>
+        <form action="" method="">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <br>
+            <label for="from">Email address</label>
+            <input type="text" name="from">
+            <br>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject">
+            <br>
+            <label for="importance">Importance</label>
+            <input type="range" name="importance" min="0" max="5" step="1">
+            <br>
+            <p>Are you a robot or a human?</p>
+            <label for="robot">Robot</label>
+            <input type="radio" name="answer" id="robot">
+            <label for="human">Human</label>
+            <input type="radio" name="answer" id="human">
+            <label for="other">Other</label>
+            <input type="radio" name="answer" id="other">
+            <br>
+            <label for="message">Message</label>
+            <textarea name="message" rows="5" cols="30">
+            </textarea>
+            <br>
+            <input type="submit" value="send">
+        </form>
+    </section>
+
+<!-- FOOTER SECTION -->
+
+    <footer>
+        <p>All rights reserved Kristian B. Jacobsen©2021</p>
+        <p>Designed in Oslo</p>
+    </footer>
 
 </body>
 
