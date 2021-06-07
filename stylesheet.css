@@ -3,18 +3,69 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: 'Baskervville', serif;
+    font-weight: 200;
+}
+
 h2 {
     text-align: center;
     margin: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-family: 'Cormorant Infant', serif;
+}
+
+.entry {    
+    display: flex;
+    justify-content: center;
+}
+
+.entryimg {
+    opacity: 40%;
+    position: relative;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+.entrybio {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    margin-top: 25%;
+    font-size: 1.6rem;
+}
+
+.entrybio p {
+    margin: 1em;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 20;
+    
+}
+
+
+nav {
+    background-color: white
 }
 
 header ul {
     display: flex;
     justify-content: space-around;
+
 }
 
 header li {
     display: block;
+    margin: 1em 0 1em 0;
+    font-size: 15px;
+    opacity: 60%;
+}
+
+li {
+    font-family: 'Cormorant Infant', serif;
 }
 
 .about {
@@ -34,6 +85,7 @@ header li {
     width: auto;
     margin-left: 5em;
     margin-top: 1em;
+        box-shadow: 5px 5px 20px grey;
 }
 
 .about ul {
@@ -44,13 +96,14 @@ header li {
 .logos {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skills img {
     width: auto;
     height: 150px;
-    outline: auto;
     margin: 1em;
+    box-shadow: 5px 5px 20px grey;
 
 }
 
@@ -61,9 +114,9 @@ header li {
 }
 
 .portfolio img {
-    width: 600px;
-    height: 300px;
-    box-shadow: 5px 5px 20px black;
+    width: 550px;
+    height: 250px;
+    box-shadow: 5px 5px 20px grey;
     margin: 15px;
 }
 
@@ -79,12 +132,44 @@ header li {
 
 code {
     color: blue;
-
+    background-color: rgb(236, 236, 236);
+    box-shadow: 3px 3px 8px black;
+    padding: 2em;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+}
 
+.form {
+    padding-top: 2em;
+    margin-top: 1em;
+    display: block;
+    box-shadow: 3px 3px 8px lightgray;
+    text-align: center;
+    width: 45%;
+    min-width: 300px;
+}
+
+.form p {
+    margin: 0.5em;
+}
+
+input {
+    margin: 1em;
+}
+
+#robot, #human, #other {
+    margin-left: 0px;
+}
 
 footer {
     display: flex;
     justify-content: space-between;
+}   
+
+footer p {
+    margin: 0 2em 1em 2em;
+    font-size: 80%;
 }
