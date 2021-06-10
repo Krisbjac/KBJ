@@ -1,5 +1,4 @@
 * {
-    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -12,6 +11,8 @@ h2 {
     text-align: center;
     margin: 25px;
     font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 p {
@@ -59,7 +60,7 @@ header ul {
 
 header li {
     display: block;
-    margin: 1em 0 1em 0;
+    margin: 0.5em 0 0.5em 0;
     font-size: 15px;
     opacity: 60%;
 }
@@ -68,56 +69,98 @@ li {
     font-family: 'Cormorant Infant', serif;
 }
 
+
+label {
+    font: italic;
+}
+
 .about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.about-text {
+    margin-left: 7em;
+    margin-right: 3em;
+    max-width: 400px;
 }
 
 .about p {
     display: block;
-    margin-left: 10em;
     margin-top: 1em;
+    font-style: oblique;
+    line-height: 24px;
+    overflow-wrap:break-word;
 }
+
 
 .about img {
     height: 300px;
     width: auto;
-    margin-left: 5em;
-    margin-top: 1em;
-        box-shadow: 5px 5px 20px grey;
+    margin-left: 3em;
+    margin-top: 4em;
+    box-shadow: 5px 5px 20px grey;
 }
 
 .about ul {
-    margin-left: 10em;
     line-height: 1.2em;
+}
+
+.about li {
+    margin: 0.3em;
 }
 
 .logos {
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.skill-txt {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+#html-txt, #css-txt, #js-txt, #vsc-txt, #gh-txt {
+    padding: 45px;
+    margin-left: 1em;
+    margin-right: 1em;
+    z-index: 1;
+    
 }
 
 .skills img {
     width: auto;
     height: 150px;
-    margin: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
     box-shadow: 5px 5px 20px grey;
-
+    transition: all 200ms linear;
+    margin-bottom: 100px;
+    z-index: 2;
 }
 
 .sites {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .portfolio img {
-    width: 550px;
+    width: 500px;
     height: 250px;
     box-shadow: 5px 5px 20px grey;
-    margin: 15px;
+    margin: 10px;
+    overflow: hidden;
 }
 
 .fizzbuzz p{
@@ -128,6 +171,7 @@ li {
 .fizzbuzzcode {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 code {
@@ -137,19 +181,30 @@ code {
     padding: 2em;
 }
 
+.videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+iframe {
+    margin: 0.4em;
+}
+
 .contact {
+    font-family: 'Cormorant Infant', serif;
     display: flex;
     justify-content: center;
 }
 
 .form {
     padding-top: 2em;
-    margin-top: 1em;
     display: block;
     box-shadow: 3px 3px 8px lightgray;
     text-align: center;
-    width: 45%;
-    min-width: 300px;
+    width: 30%;
+    min-width: 350px;
+    padding: 50px;
 }
 
 .form p {
@@ -170,6 +225,6 @@ footer {
 }   
 
 footer p {
-    margin: 0 2em 1em 2em;
-    font-size: 80%;
+    margin: 2em 2em 0 2em;
+    font-size: 70%;
 }

@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>Kristian B. Jacobsen</title>
     <link rel="stylesheet" href="./stylesheet.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Programming Skills</li>
-                <li>Web Dev Portfolio</li>
-                <li>Contact</li>
+               <a href="#about"><li>About Me</li></a> 
+               <a href="#skills"><li>Programming Skills</li></a> 
+               <a href="#portfolio"><li>Web Dev Portfolio</li></a> 
+               <a href="#contact"><li>Contact</li></a> 
             </ul>
         </nav>
     </header>
@@ -29,19 +30,16 @@
 
 
 <!-- ABOUT SECTION --> 
-    <div>
-        <h2>About Me</h2>
-    </div>
-    <section class="about">            
+    <section class="about" id="about">            
         <div class="about-text">
         <p>
             Hi!
         </p>
         <p>
-            My name is Kristian B. Jacobsen. <br> I’m a 29 year old Oslo-based entrepreneur combining my work <br> as a professional jazz-bassist and project leader with my newfound <br> love for programming and web-development.
+            My name is Kristian B. Jacobsen. <br> I’m a 29 year old Oslo-based musician and programmer combining my work as a professional jazz-bassist and project leader with my newfound love for programming and web-development.
         </p>
         <p>
-            Apart from performing and programming I work as an A&R at <br> Pekula Records giving adventurous new music a platform. <br> In the summertime I coach the youth job training program <br> Kultursommerjobb organized by Oslo municipality. 
+            Apart from performing and programming I work as an A&R at <a href="https://www.pekula.no" target="_blank">Pekula Records</a>  giving adventurous new music a platform. In the summertime I coach the youth job training program <br> <a href="https://www.facebook.com/kultursommerjobb.oslo/" target="_blank">Kultursommerjobb</a>  organized by Oslo municipality. 
         </p>
         <p>
             Other skills include:
@@ -57,22 +55,32 @@
     <img src="./Resources/Kristian_web-768x768.jpg" alt="">
     </section>
 <!-- SKILLS SECTION -->
-    <section class="skills">
-        <h2>Programming Skills</h2>
+    <section class="skills" id="skills">
+        <h2>PROGRAMMING SKILLS</h2>
         <div class="logos">
-            <img src="./Resources/5352-html5_102567.png" alt="Hypertext Markup Language">
-            <img src="./Resources/file_type_css_icon_130661 (1).png" alt="Cascading Style Sheets">
-            <img src="./Resources/file_type_js_official_icon_130509.png" alt="JavaScript">
-            <img src="./Resources/visual-studio-code-1.svg" alt="Visual Studio Code">
-            <img src="./Resources/GitHub-Mark-120px-plus.png" alt="Git Hub">
+            <img src="./Resources/5352-html5_102567.png" alt="Hypertext Markup Language" id="html">
+            
+            <img src="./Resources/file_type_css_icon_130661 (1).png" alt="Cascading Style Sheets" id="css">
+            
+            <img src="./Resources/file_type_js_official_icon_130509.png" alt="JavaScript" id="js">
+            <img src="./Resources/visual-studio-code-1.svg" alt="Visual Studio Code" id="vsc">
+            <img src="./Resources/GitHub-Mark-120px-plus.png" alt="Git Hub" id="gh">
+            <div class="skill-txt">
+                <p id="html-txt">HTML</p>
+                <p id="css-txt">CSS</p>
+                <p id="js-txt">JavaScript</p>
+                <p id="vsc-txt">Visual Studio Code</p>
+                <p id="gh-txt">GitHub</p>
+            </div>
         </div>
+
         </section>
     </section>
 
 <!-- PORTFOLIO SECTION -->
 
-    <section class="portfolio">
-        <h2>Web Dev Portfolio</h2>
+    <section class="portfolio" id="portfolio">
+        <h2>WEB DEV PORTFOLIO</h2>
         <div class="sites">
             <img src="./Resources/Excursion.png" alt="Excursion page">
             <img src="./Resources/Fotomatix.png" alt="Fotomatic page">
@@ -82,7 +90,7 @@
         <div class="fizzbuzz">
             <div>
                 <p>
-                    <b>Fizzbuzz JavaScript Challenge:</b>
+                    <h2>Fizzbuzz JavaScript Challenge:</h2>
                 </p>
             </div>
             
@@ -110,11 +118,25 @@
         </div>
     </section>
 
+<!-- VIDEO SECTION -->
+    <section class="video-section">
+        <h2>Music Stuff</h2>
+        <div class="videos">
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/P1JfPcmqUHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/kRZhTBOOJjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/DhdLyXsClDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/XPHxP_lNUFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/Rayv2mEdNsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
 <!-- CONTACT SECTION -->
-    <h2>Contact</h2>
-    <section class="contact">
-     
+
+    <section class="contact" id="contact">
+        
         <form action="" method="" class="form">
+            <h2>Contact</h2>
             <label for="name">Name</label>
             <input type="text" name="name">
             <br>
